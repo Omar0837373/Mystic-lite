@@ -1,4 +1,5 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+    conn.sendPresenceUpdate('recording', m.chat);
     conn.relayMessage(m.chat, {
       viewOnceMessage: {
         message: {
