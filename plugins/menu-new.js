@@ -7,17 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
               title: ''
             },
             body: {
-                text: 'const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *THE KODZI - Bot* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *أهلا, ${taguser}*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *المالك:* Omar Ashraf
-║➤ *رقم المطور:* wa.me/201050079089
-║➤ *التاريخ:* ${date}
-║➤ *وقت التشغيل:* ${uptime}
-║➤ *عدد المستخدمين:* ${rtotal}
-╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯'
+                text: ''
             },
             nativeFlowMessage: {
               buttons: [
@@ -27,8 +17,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                     title: 'اضغط',
                     sections: [
                       {
-                        title: 'القائمة',
-                        highlight_label: 'تست',
+                        title: 'الأوامر',
+                        highlight_label: 'مميز',
                         rows: [
                           {
                             header: 'منشن',
@@ -41,16 +31,22 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                             title: 'الدعم',
                             description: '',
                             id: '.الدعم'
-                          },
-                          {
-                            header: 'المطور',
-                            title: 'المطور',
-                            description: '',
-                            id: '.مطور'
                           }
                         ]
                       }
-                    ]
+                    ],
+                      sections: [
+                          {
+                        title:  'الأوامر' ,
+                        highlight_label:  'مميز' ,
+                        rows: [
+                          {
+                            header: 'المطور',
+                            title: 'المطور',
+                            description: 'رقم المطور الرسمي',
+                            id: '.المطور'
+                          },
+                              ]
                   }),
                   messageParamsJson: ''
                 }
@@ -65,6 +61,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['الازرار']
+handler.command = ['الازرار|م']
 
 export default handler
