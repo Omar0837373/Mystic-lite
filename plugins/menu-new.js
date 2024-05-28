@@ -1,13 +1,23 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     conn.relayMessage(m.chat, {
       viewOnceMessage: {
-        message: {
+                  message: {
           interactiveMessage: {
             header: {
-              title: '— *THE KODZI - Bot* —'
+              title: ''
             },
             body: {
-                text: ''
+                text: 'const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
+║    ◉— *THE KODZI - Bot* —◉
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
+║➤ *أهلا, ${taguser}*
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
+║➤ *المالك:* Omar Ashraf
+║➤ *رقم المطور:* wa.me/201050079089
+║➤ *التاريخ:* ${date}
+║➤ *وقت التشغيل:* ${uptime}
+║➤ *عدد المستخدمين:* ${rtotal}
+╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯'
             },
             nativeFlowMessage: {
               buttons: [
