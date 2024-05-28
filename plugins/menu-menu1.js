@@ -41,7 +41,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ *⚓ الرتبة:* ${role}
 ┣ *💎 الماس:* ${limit}
 ┣ *👾 فلوس:* ${money}
-┣ *🪙 Tokens:* ${joincount}
+┣ *🪙 توكنات:* ${joincount}
 ┣ *🎟️ برميم:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ┗━━━━━━━━━━━━━━━━┛
 ${readMore}
