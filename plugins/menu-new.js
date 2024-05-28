@@ -7,17 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
               title: '— *THE KODZI - Bot* —'
             },
             body: {
-                text: '╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *THE KODZI - Bot* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *أهلا, ${taguser}*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *المالك:* Omar Ashraf
-║➤ *رقم المطور:* wa.me/201050079089
-║➤ *التاريخ:* ${date}
-║➤ *وقت التشغيل:* ${uptime}
-║➤ *عدد المستخدمين:* ${rtotal}
-╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯'
+                text: ''
             },
             nativeFlowMessage: {
               buttons: [
