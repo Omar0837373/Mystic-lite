@@ -34,19 +34,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                           }
                         ]
                       }
-                    ],
-                      sections: [
-                          {
-                        title:  'الأوامر' ,
-                        highlight_label:  'مميز' ,
-                        rows: [
-                          {
-                            header: 'المطور',
-                            title: 'المطور',
-                            description: 'رقم المطور الرسمي',
-                            id: '.المطور'
-                          },
-                              ]
+                    ]
                   }),
                   messageParamsJson: ''
                 }
