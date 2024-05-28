@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                           {
                             header: 'جميع الأوامر',
                             title: 'menu',
-                            description: 'لستة بجميع الأوامر',
+                            description: '(#جــــميع الأوامر🔰)',
                             id: '.menu'
                           },
                                         {
