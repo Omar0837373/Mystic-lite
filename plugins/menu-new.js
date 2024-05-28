@@ -22,7 +22,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                         rows: [
                           {
                             header: 'جميع الأوامر',
-                            title: '',
                             description: '(#جــــميع الأوامر🔰)',
                             id: '.menu'
                           },
