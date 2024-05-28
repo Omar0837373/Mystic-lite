@@ -1,13 +1,13 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     conn.relayMessage(m.chat, {
       viewOnceMessage: {
-                  message: {
+        message: {
           interactiveMessage: {
             header: {
-              title: ''
+              title: 'الازرار'
             },
             body: {
-                text: ''
+              text: 'تست'
             },
             nativeFlowMessage: {
               buttons: [
@@ -21,16 +21,22 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                         highlight_label: 'مميز',
                         rows: [
                           {
-                            header: 'منشن',
-                            title: 'منشن',
-                            description: '',
-                            id: '.منشن'
+                            header: 'جميع الأوامر',
+                            title: 'menu',
+                            description: 'لستة بجميع الأوامر',
+                            id: '.menu'
                           },
                                         {
                             header: 'الدعم',
                             title: 'الدعم',
                             description: '',
                             id: '.الدعم'
+                          },
+                          {
+                            header: 'المطور',
+                            title: 'المطور',
+                            description: '',
+                            id: '.مطور'
                           }
                         ]
                       }
