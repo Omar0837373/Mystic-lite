@@ -27,10 +27,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                             id: '.menu'
                           },
                                         {
-                            header: 'الدعم',
-                            title: 'الدعم',
+                            header: 'وقت التشغيل',
+                            title: '(#وقت التشغيل🕓)',
                             description: '',
-                            id: '.الدعم'
+                            id: '.runtime'
                           },
                           {
                             header: 'المطور',
