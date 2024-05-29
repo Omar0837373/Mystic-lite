@@ -51,8 +51,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
       }
     }, {})
-
 }
+const interactiveMessage = {
+             body: { text: menu },
+                 footer: { text: wm + ` \nSi algo no funciona utilice el comando *${usedPrefix}menu2*` },
+                header: { title: `⭐ *------- NUEVO MENÚ -------* ⭐\n${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser} 💖*`, subtitle: "test4", hasMediaAttachment: false },
+    nativeFlowMessage: { buttons: [{ 
+    name: "single_select",
+    buttonParamsJson
+    }]
+    }}
 
 handler.help = ['info']
 handler.tags = ['main']
