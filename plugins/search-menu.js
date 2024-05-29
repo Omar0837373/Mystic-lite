@@ -28,10 +28,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                             id: '.google'
                           },
                                         {
-                            header: '',
-                            title: '(#وقت التشغيل🕓)',
+                            header: 'GitHub',
+                            title: '',
                             description: '',
-                            id: '.runtime'
+                            id: '.github'
                           },
                           {
                             header: 'البحث',
