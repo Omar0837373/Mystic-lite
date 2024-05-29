@@ -5,7 +5,7 @@ const handler = async (m, {conn, isPrems}) => {
   const hasil = Math.floor(Math.random() * 5000);
   const time = global.db.data.users[m.sender].lastwork + 600000;
   if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `⚔️ *انتظر* ⚔️\n\n*—◉ يمكنك العودة في ${msToTime(time - new Date())} ⏳*`;
-  conn.sendMessage(m.chat, {text: `🏞️ *انت تعمل:*\n\n🛠️ *${pickRandom(global.work)}*\n\n*ربحت ${hasil} من نقاط الخبرة*`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `*انت تعمل:*\n\n🛠️ *${pickRandom(global.work)}*\n\n*ربحت ${hasil} من نقاط الخبرة*`}, {quoted: m});
   global.db.data.users[m.sender].exp += hasil;
   global.db.data.users[m.sender].lastwork = new Date() * 1;
   enviando = false
@@ -32,5 +32,17 @@ function pickRandom(list) {
 }
 
 global.work = [
-  'انت تعمل كراقصة.',
+  'راقصة 💃.',
+  'خادم.',
+  'زبال.',
+  'مدير بنك.',
+  'صياد.',
+  'تاجر.',
+  'سائق.',
+  'تاجر زيتون.',
+  'بودرجي.',
+  'شحات.',
+  'موظف.',
+  'مهندس.',
+  'طبيب.',
 ];
