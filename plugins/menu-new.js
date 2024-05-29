@@ -52,7 +52,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     }, {})
 },
-const interactiveMessage = {
+const relayMessage = {
              body: { text: menu },
                  footer: { text: wm + ` \nSi algo no funciona utilice el comando *${usedPrefix}menu2*` },
                 header: { title: `⭐ *------- NUEVO MENÚ -------* ⭐\n${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser} 💖*`, subtitle: "test4", hasMediaAttachment: false },
@@ -64,6 +64,6 @@ const interactiveMessage = {
 
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['القائمة']},
+handler.command = ['القائمة']
 
 export default handler
