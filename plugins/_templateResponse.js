@@ -87,4 +87,4 @@ messages: [proto.WebMessageInfo.fromObject(messages)].map((v) => (v.conn = this,
 type: 'append',
 }
 this.ev.emit('messages.upsert', msg)
-  }
+}
