@@ -29,15 +29,15 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                           },
                                         {
                             header: 'GitHub',
-                            title: '',
+                            title: '(#بحث جوجل🔎)',
                             description: '',
                             id: '.github'
                           },
                           {
-                            header: 'البحث',
-                            title: '',
+                            header: 'رجوع',
+                            title: '(#القائمة الرئيسية🔻)',
                             description: '',
-                            id: '.search'
+                            id: '.القائمة'
                           }
                         ]
                       }
