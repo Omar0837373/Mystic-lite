@@ -34,6 +34,37 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                             id: '.runtime'
                           },
                           {
+                            header: 'البحث',
+                            title: '',
+                            description: '',
+                            id: '.قائمة البحث'
+                          }
+                        ]
+                      }
+                    ], 
+                    buttons: [
+                {
+                  name: 'dev',
+                  buttonParamsJson: JSON.stringify({
+                    title: 'المطور',
+                    sections: [
+                      {
+                        title: 'الأوامر',
+                        highlight_label: 'مميز',
+                        rows: [
+                          {
+                            header: 'جميع الأوامر',
+                            title: '(#جـميع الأوامر🔰)',
+                            description: '',
+                            id: '.menu'
+                          },
+                                        {
+                            header: 'وقت التشغيل',
+                            title: '(#وقت التشغيل🕓)',
+                            description: '',
+                            id: '.runtime'
+                          },
+                          {
                             header: 'المطور',
                             title: 'المطور',
                             description: '',
