@@ -5,11 +5,11 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   let who;
   if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
   else who = m.chat;
-  if (!who) throw `*[❗] Etiqueta a alguien para robar.*`;
-  if (!(who in global.db.data.users)) throw `*[❗] El usuario no se encuentra en mi base de datos.*`;
+  if (!who) throw `*[❗] منشن اللي هتسرقه.*`;
+  if (!(who in global.db.data.users)) throw `*[❗] معرفوش.*`;
   const users = global.db.data.users[who];
   const rob = Math.floor(Math.random() * ro);
-  if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} xp*\nNo robes a un pobre v":`, null, {mentions: [who]});
+  if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} لديه اقل من *${ro} xp*\nلا تسرق رجل فقير":`, null, {mentions: [who]});
   global.db.data.users[m.sender].exp += rob;
   global.db.data.users[who].exp -= rob;
   m.reply(`*‣ Robaste ${rob} XP a @${who.split`@`[0]}*`, null, {mentions: [who]});
@@ -17,7 +17,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 };
 handler.help = ['rob'];
 handler.tags = ['econ'];
-handler.command = ['robar', 'rob'];
+handler.command = ['زرف', 'سرقة'];
 export default handler;
 function msToTime(duration) {
   const milliseconds = parseInt((duration % 1000) / 100);
