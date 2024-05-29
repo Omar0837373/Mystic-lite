@@ -9,7 +9,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   if (!(who in global.db.data.users)) throw `*[❗] معرفوش.*`;
   const users = global.db.data.users[who];
   const rob = Math.floor(Math.random() * ro);
-  if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} لديه اقل من *${ro} xp*\nلا تسرق رجل فقير":`, null, {mentions: [who]});
+  if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} لديه اقل من *${ro} xp*\nلا تسرق رجل فقير`, null, {mentions: [who]});
   global.db.data.users[m.sender].exp += rob;
   global.db.data.users[who].exp -= rob;
   m.reply(`*‣ Robaste ${rob} XP a @${who.split`@`[0]}*`, null, {mentions: [who]});
