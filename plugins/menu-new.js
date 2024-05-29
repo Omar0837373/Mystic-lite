@@ -35,7 +35,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                           },
                           {
                             header: 'البحث',
-                            title: '',
+                            title: '(#قائمة البحث🌐)',
                             description: '',
                             id: '.قائمة البحث'
                           }
